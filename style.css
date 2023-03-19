@@ -1,0 +1,20 @@
+body {
+    background-color:rgb(254, 250, 244);
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color:black
+}
+h1, h2, h3, h4 {
+    line-height: 1.4;
+}
+h1 {
+    font-size:30px;
+}
+h2 {
+    font-size:40px;
+}
+h3 {
+    font-size:20px;
+}
