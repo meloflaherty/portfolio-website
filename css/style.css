@@ -1,0 +1,104 @@
+/*
+Colors used: 
+background color: Light blue #fde8d4
+Secondary color: Burnt orange #bc6a1f
+Blue for hyperlinks: #373f84
+
+Typography: Oswald : Weight 300,400,600
+
+*/
+
+body {
+    background-color: #edf3e8;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color:black
+}
+p {
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: 300;
+}
+h1, h2, h3, h4 {
+    line-height: 1.4;
+}
+h1 {
+    font-size: 2.75em;
+    font-weight: 600
+}
+h2 {
+    font-size:2.25em;
+    Font-weight: 600;
+}
+h3 {
+    font-size:1.75em;
+    font-weight: 400;
+}
+h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+}
+img {
+    width: 100%;
+}
+a {
+    color: #6b3f3f;
+    text-decoration: none; /*no underlining*/
+}
+a:hover {
+    color: #7d85ce;
+    text-decoration: underline; /*underlined when hovering*/
+}
+a:visited { 
+    color: #7d85ce /*visited link */
+}
+a:active {
+    color:#9e5919
+}
+a:hover,
+a:focus {
+    color: #7d85ce;
+    text-decoration: underline;
+}
+#work {
+    color:#9e5919;
+    text-decoration: underline
+}
+#contact.me {
+    color:#6b3f3f
+}
+#hero {
+    color:#9e5919
+}
+.button {
+    display: inline-block; 
+    background-color:#6b3f3f;
+    color: #f1e5d2; /*need to override the default color*/
+    font-weight: 400;
+    padding: 5px;
+    border-radius: 5px;
+    border-bottom: 2px solid #f1e5d2; /*border width type and color*/
+    transition: 0.2s opacity;
+}
+.button:hover {
+    opacity: 0.8; /*reduces opacity to 80% */
+    text-decoration: underline;
+}
+.button:active {
+    color:#f1e5d2
+}
+.button.contact {
+    background-color:#f1e5d2 ;
+    color:#6b3f3f;
+    text-decoration: underline;
+    border: 2px solid #6b3f3f
+}
+.button.contact:hover {
+    background-color:#fceddf;
+    color: #7d85ce;
+}
+.button.contact:active {
+    color:#9e5919;
+}
