@@ -19,53 +19,44 @@
         <title> Mel OFlaherty UX Portfolio </title>
     </head>
     <body>
-        <header id="hero">
-            <div>
-               <img src="img/mlogo.svg" alt="Mel Portfolio">
+        <header>
+            <div class="container">
+               <img src="img/mlogo.svg" alt="Logo" class="logo center">
                <nav>
-                <ul>
+                <ul class="navigation">
                 <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="about.html#skills">My Skills</a></li>
                 </ul>
                </nav>
-            </div>
         </header>
         <main>
-            <div>
-                <h1>Hi there! My name is Mel.</h1>
-                <p>
+        </div>
+        <div id="hero">
+            <div class="container">
+                <h1 class="center">Hi there! My name is Mel.</h1>
+                <p class="center">
                     I am a UX Designer based in San Diego, CA.
-                </p>
-            </div>
-            <div>
-                <div>
-                    <h2 id="work"> My Work</h2>
-                    <div>
+                </div>
+                    <div id="work">
+                    <div class="container">
+                        <h2 class="center">My Work</h2>
                         <picture>
                             <source srcset="img/olive/olive-logo-small.png" media="(max-width=767px)">
                             <img src="img/olive/olive-logo-large.png" alt="Olive App">
                         </picture>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h2>Olive</h2>
-                <p>
-                    Olive is a responsive mobile app directed toward health-conscious users focusing on health, wellness and fitness.
-                </p>
-                <a href="olive.html" class="button">Read more</a>
-            </div>
-            <div>
+                <h2 class="center">Olive</h2>
+                <p class="center">Olive is a responsive mobile app directed toward health-conscious users focusing on health, wellness and fitness.</p>
+                <a href="olive.html" class="button" >Read more</a>
+            <div class="row">
             <picture>
                 <source srcset="img/olive/tools-small.jpg" media=(max-width:767px)>
                 <img src="img/olive/tools-large.jpg" alt="Get in touch">
             </picture>
-            </div>
         </main>
         <footer id="contact">
-            <div>
+            <div class="container">
                 <h2 id="contact.me">Want to get in touch?</h2>
                 <p>
                     Feel free to reach out to me if you like my work or want to discuss future opportunities! 
@@ -87,5 +78,6 @@
                     </a>
                 <p> Copyright MEL-OFLAHERTY 2023</p>
         </footer>
+    </div>
     </body>
     </html>
