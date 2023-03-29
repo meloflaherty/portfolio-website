@@ -1,14 +1,30 @@
 /*
 Colors used: 
-background color: Light blue #fde8d4
-Secondary color: Burnt orange #bc6a1f
-Blue for hyperlinks: #373f84
+background color: Light green #edf3e8
+Primary color: Light orange #f1e5d2
+Secondary color: Maroon #6b3f3f
+Blue for hyperlinks: #7d85ce
+Burnt orange for active: #9e5919
+Button color: #545454 & #f1e5d2
 
 Typography: Oswald : Weight 300,400,600
 
 */
-
-body {
+header {
+    background-color: #ffffff;
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+    -webkit-box-shadow: 0px 6px 11px 1px
+    rgba(217,187,143,0.62);
+    -moz-box-shadow: 0px 6px 11px 1px
+    rgba(217,187,143,0.62);
+    box-shadow: 0px 6px 11px 1px rbga(217,187,143,0.62);
+}
+main {
+    padding-top: 133px;
+}
+    body {
     background-color: #edf3e8;
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
@@ -43,35 +59,6 @@ h4 {
 img {
     width: 100%;
 }
-a {
-    color: #6b3f3f;
-    text-decoration: none; /*no underlining*/
-}
-a:hover {
-    color: #7d85ce;
-    text-decoration: underline; /*underlined when hovering*/
-}
-a:visited { 
-    color: #7d85ce /*visited link */
-}
-a:active {
-    color:#9e5919
-}
-a:hover,
-a:focus {
-    color: #7d85ce;
-    text-decoration: underline;
-}
-#work {
-    color:#9e5919;
-    text-decoration: underline
-}
-#contact.me {
-    color:#6b3f3f
-}
-#hero {
-    color:#9e5919
-}
 .button {
     display: inline-block; 
     background-color:#6b3f3f;
@@ -101,4 +88,78 @@ a:focus {
 }
 .button.contact:active {
     color:#9e5919;
+}
+/* Layout styling */
+.container {
+    padding: 0 15px;
+    max-width: 1200px;
+}
+.row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+.center {
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}   
+.logo {
+    max-width: 250px;
+}
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+nav > ul > li {
+    display: inline-block;
+}
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#6b3f3f;
+}
+nav > ul > li > a {
+    color: #6b3f3f;
+    text-decoration: none; /*no underlining*/
+}
+nav > ul > li > a:hover {
+    color: #7d85ce;
+    text-decoration: underline; /*underlined when hovering*/
+}
+nav > ul > li > a:visited { 
+    color: #7d85ce /*visited link */
+}
+nav > ul > li > a:active {
+    color:#9e5919
+}
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+    color: #7d85ce;
+    text-decoration: underline;
+}
+#work {
+    color:#000000;
+    background-color:#f2dcce
+}
+#contact.me {
+    color:#6b3f3f
+}
+#hero {
+    color:#9e5919;
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+#work .row {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #000000;
+}
+footer {
+    color: #000000;
+    background-color: rgb(251, 235, 196);
+    text-align: center;
 }
