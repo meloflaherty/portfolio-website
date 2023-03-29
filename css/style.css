@@ -24,13 +24,15 @@ header {
 main {
     padding-top: 133px;
 }
-    body {
+body {
     background-color: #edf3e8;
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.6;
-    color:black
+    color:black;
+    max-width: 100%;
+    position: relative;
 }
 p {
     line-height: 1.6;
@@ -143,13 +145,13 @@ nav > ul > li > a:focus {
 }
 #work {
     color:#000000;
-    background-color:#f2dcce
+    background-color:#ffffff
 }
 #contact.me {
-    color:#6b3f3f
+    color:#545454;
 }
 #hero {
-    color:#9e5919;
+    color:#545454;
     background-color: #ffffff;
     padding: 20px 0;
     display: inline-block;
@@ -161,10 +163,20 @@ nav > ul > li > a:focus {
 }
 footer {
     color: #000000;
-    background-color: rgb(251, 235, 196);
+    background-color: #ffffff;
     text-align: center;
 }
 .social-icons img {
     height: 40px;
     width: 40px;
+}
+#about {
+    background-color: #ffffff;
+}
+#olive {
+    color: #545454;
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
 }
