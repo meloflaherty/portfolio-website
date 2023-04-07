@@ -172,7 +172,6 @@ nav > ul > li > a:focus {
 }
 #work .row {
     padding-bottom: 25px;
-    border-bottom: 1px solid #000000;
 }
 footer {
     color: #000000;
@@ -195,15 +194,10 @@ footer {
     position: relative;
 }
 
-[class*="col-"] {
-    float: left;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
 svg {
-    width: 400px;
-    max-width: 400px;
+    width: 250px;
+    max-width: 250px;
     height: auto;
 }
 #path22 {
@@ -223,6 +217,7 @@ svg {
 
 
 
+
 @keyframes color {
     from {fill: #549e5c;}
     to {fill: rgb(237, 230, 19)}
@@ -232,6 +227,16 @@ svg {
 
 /* Medium devices (640px or larger) */
 @media only screen and (min-width: 640px) {
+[class*="col-"] {
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+}
+picture {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
 header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -266,6 +271,9 @@ body {
 .col-lg-7 {
     width: 58.33%;
 }
+.col-lg-5 {
+    width: 41.66%;
+}
 nav {
     width: auto;
     float: right;
@@ -279,14 +287,3 @@ nav {
 }
 
 
-/*x-large devices (1440px or larger) */
-@media only screen and (min-width: 1440px) {
-.col-xl-5 {
-    width: 41.66%;
-}
-.continer {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-}
