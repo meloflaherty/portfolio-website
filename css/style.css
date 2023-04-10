@@ -25,12 +25,12 @@ main {
     padding-top: 133px;
 }
 body {
-    background-color: #edf3e8;
+    background-color: #f5e3bf;
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.6;
-    color:black;
+    color:#545454;
     max-width: 100%;
     position: relative;
 }
@@ -63,12 +63,12 @@ img {
 }
 .button {
     display: inline-block; 
-    background-color:#6b3f3f;
-    color: #f1e5d2; /*need to override the default color*/
+    background-color:#f8eac7;
+    color: #e8b563; /*need to override the default color*/
     font-weight: 400;
     padding: 5px;
     border-radius: 5px;
-    border-bottom: 2px solid #f1e5d2; /*border width type and color*/
+    border-bottom: 2px solid #e8b563; /*border width type and color*/
     transition-duration: 0.5s;
 }
 .button:hover {
@@ -79,9 +79,9 @@ img {
 }
 .button.contact {
     background-color:#f1e5d2 ;
-    color:#6b3f3f;
+    color:#a67373;
     text-decoration: underline;
-    border: 2px solid #6b3f3f;
+    border: 2px solid #a47777;
     transition-duration: 0.5s;
 }
 .button.contact:hover {
@@ -132,15 +132,15 @@ nav > ul > li > a {
     color:#6b3f3f;
 }
 nav > ul > li > a {
-    color: #6b3f3f;
+    color: #e5b0b0;
     text-decoration: none; /*no underlining*/
 }
 nav > ul > li > a:hover {
-    color: #7d85ce;
+    color: #333550;
     text-decoration: underline; /*underlined when hovering*/
 }
 nav > ul > li > a:visited { 
-    color: #7d85ce /*visited link */
+    color: #49506d /*visited link */
 }
 nav > ul > li > a:active {
     color:#9e5919
@@ -151,7 +151,7 @@ nav > ul > li > a:focus {
     text-decoration: underline;
 }
 #work {
-    color:#000000;
+    color:#545454;
     background-color:#ffffff
 }
 #contact.me {
@@ -167,14 +167,14 @@ nav > ul > li > a:focus {
 }
 #hero span {
     display: block;
-    background-color: rgb(247, 187, 159);
+    background-color: rgb(239, 217, 207);
     opacity: 0.8;
 }
 #work .row {
     padding-bottom: 25px;
 }
 footer {
-    color: #000000;
+    color: #545454;
     background-color: #ffffff;
     text-align: center;
 }
@@ -184,10 +184,12 @@ footer {
 }
 #about {
     background-color: #ffffff;
+    position: relative;
+    color: #545454;
 }
 #olive {
     color: #545454;
-    background-color: #f6f2dd;
+    background-color: #ffffff;
     padding: 20px 0;
     display: inline-block;
     width: 100%;
