@@ -14,6 +14,7 @@ header {
     background-color: #ffffff;
     text-align: center;
     position: relative;
+    width: 100%;
     padding: 10px 0;
     -webkit-box-shadow: 0px 6px 11px 1px
     rgba(217,187,143,0.62);
@@ -22,7 +23,7 @@ header {
     box-shadow: 0px 6px 11px 1px rbga(217,187,143,0.62);
 }
 main {
-    padding-top: 133px;
+    padding-top: 150px;
 }
 body {
     background-color: #f5e3bf;
@@ -58,9 +59,19 @@ h4 {
     font-size: 1.35em;
     font-weight: 400;
 }
+
+/* Images */
+
 img {
     width: 100%;
 }
+.logo {
+    max-width: 150px;
+    text-transform: uppercase;
+}
+
+/* Buttons */
+
 .button {
     display: inline-block; 
     background-color:#f8eac7;
@@ -92,16 +103,17 @@ img {
 .button.contact:active {
     color:#9e5919;
 }
+
 /* Layout styling */
 .container {
     padding: 0 15px;
-    margin: 0 auto;
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
-
 .row::after {
     content: "";
     clear: both;
@@ -112,15 +124,14 @@ img {
 }
 * {
     box-sizing: border-box;
-}   
-.logo {
-    max-width: 250px;
 }
+
+/* Navigation */
+
 nav > ul {
     list-style-type: none;
     padding: 0;
-    display: inline-block;
-    width: 100%;
+    margin: 0;
 }
 nav > ul > li {
     display: inline-block;
@@ -145,10 +156,38 @@ nav > ul > li > a:visited {
 nav > ul > li > a:active {
     color:#9e5919
 }
+/* nav > ul {
+    margin: 1em 0;
+} */
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
     color: #7d85ce;
     text-decoration: underline;
+}
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+/* Responsive navigation */
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(217,187,143,0.62);
+}
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    padding-right: 0;
 }
 #work {
     color:#545454;
@@ -166,7 +205,7 @@ nav > ul > li > a:focus {
     text-align: center;
 }
 #hero span {
-    display: block;
+    display: inline-block;
     background-color: rgb(239, 217, 207);
     opacity: 0.8;
 }
@@ -196,7 +235,6 @@ footer {
     position: relative;
 }
 
-
 svg {
     width: 250px;
     max-width: 250px;
@@ -216,6 +254,9 @@ svg {
     animation-direction: alternate;
     animation-timing-function: linear;
 }
+.icon {
+    color: rgb(28, 107, 108);
+}
 
 
 
@@ -226,13 +267,30 @@ svg {
     }
 
 
-
 /* Medium devices (640px or larger) */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
 [class*="col-"] {
         float: left;
         padding-left: 10px;
         padding-right: 10px;
+}
+.navtoggle li:not(:last-child) {
+    display: inline-block;
+} 
+.navtoggle li:last-child {
+    display: none;
+}
+nav > ul > li {
+    display: inline-block;
+    min-width: 641px;
+}
+.navtoggle.responsive li{
+    padding: 0;
+    margin: 0;
+    border-top: 0;
+}
+.navtoggle.responsive nav{
+    padding: 0;
 }
 picture {
     width: 100%;
@@ -246,22 +304,29 @@ header {
 nav {
     width: auto;
     float: right;
-    margin-top: 4px;
 }
 main {
+    min-width: 641px;
+    max-width: 100%;
     padding-top: 99px;
 }
 .col-md-6 {
     width: 50%;
 }
+.col-md-12 {
+    width: 100%;
+}
 #about-page h3 {
     margin-top: 0;
 }
-.continer {
+img.logo {
+    min-width: 250px;
+}
+/*.continer {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-}
+}*/
 }
 
 

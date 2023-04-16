@@ -6,6 +6,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Oswald:wght@300;400;600&display=swap"
         rel="stylesheet">
@@ -25,15 +30,17 @@
 <body>
     <header id="about">
         <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
             <img src="img/mlogo.svg" alt="Mel Portfolio" class="logo center">
             <nav>
                 <ul class="navigation">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="about.html#skills">My Skills</a></li>
+                    <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></i></a></li>
                 </ul>
             </nav>
+            </div>
     </header>
     <main>
         </div>
@@ -70,7 +77,7 @@
             <div class="row">
                 <div class="container">
                     <div class="col-md-6 col-lg-7">
-                        <p id="skills"> My Skills</p>
+                        <p> My Skills</p>
                         <ul>
                             <li>User Experience</li>
                             <li>User Research: Quantitative and Qualitative</li>
