@@ -133,9 +133,6 @@ nav > ul {
     padding: 0;
     margin: 0;
 }
-nav > ul > li {
-    display: inline-block;
-}
 nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
@@ -156,9 +153,9 @@ nav > ul > li > a:visited {
 nav > ul > li > a:active {
     color:#9e5919
 }
-/* nav > ul {
+nav > ul {
     margin: 1em 0;
-} */
+} 
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
     color: #7d85ce;
@@ -282,7 +279,6 @@ svg {
 }
 nav > ul > li {
     display: inline-block;
-    min-width: 641px;
 }
 .navtoggle.responsive li{
     padding: 0;
@@ -302,8 +298,9 @@ header {
     padding: 20px 0 13px;
 }
 nav {
+    display: inline;
     width: auto;
-    float: right;
+
 }
 main {
     min-width: 641px;
@@ -322,11 +319,11 @@ main {
 img.logo {
     min-width: 250px;
 }
-/*.continer {
-    max-width: 1200px;
+.continer {
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
-}*/
+}
 }
 
 
