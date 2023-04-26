@@ -14,12 +14,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Oswald:wght@300;400;600&display=swap"
         rel="stylesheet">
+        <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, intital-scale=1">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_package_v0.16 (1)/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_package_v0.16 (1)/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_package_v0.16 (1)/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon_package_v0.16 (1)/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon_package_v0.16 (1)/safari-pinned-tab.svg" color="#000000">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_package_v0.16(1)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_package_v0.16(1)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_package_v0.16(1)/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon_package_v0.16(1)/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon_package_v0.16(1)/safari-pinned-tab.svg" color="#000000">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <meta name="author" content="Mel OFlaherty">
@@ -37,45 +38,43 @@
                         <li><a href="index.html">Work</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></i></a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                     </ul>
                 </nav>
+                    
+                <div id="hero">
+                    <div class="container">
+                            <h1 class="center">Hi there! My name is Mel. I am a UX Designer based in San Diego, CA</h1>
+                            <h3>I have always been intrigued by design and development, this site will showcase my UX/UI Design
+                                projects as well as my Frontend Development skills. Thanks for checking it out! I hope you enjoy
+                                and don't hesitate to reach out!</h3>   
+                    </div>
             </div>
             </div>
         </div>
     </header>
     <main>
-        </div>
-        <div id="hero">
-            <div class="container">
-                <span>
-                    <h1 class="center">Hi there! My name is Mel. I am a UX Designer based in San Diego, CA</h1>
-                    <p>I have always been intrigued by design and development, this site will showcase my UX/UI Design
-                        projects as well as my Frontend Development skills. Thanks for checking it out! I hope you enjoy
-                        and don't hesitate to reach out!</p>
-                </span>
-            </div>
+
             <div id="work">
                 <div class="container">
                     <h2 class="center">My Work</h2>
                     <div class="row">
                         <div class="col-md-6 col-lg-7">
-                            <picture>
-                                <source srcset="img/olive/olive-logo-small.png" media="(max-width=767px)">
-                                <img src="img/olive/olive-logo-large.png" alt="Olive App">
+                            <picture> 
+                                <source srcset="img/olive/olive-logo-small.png">
+                                <img class="displayed" src="img/olive/olive-logo-large.png" alt="Olive App">
                             </picture>
                         </div>
                         <div class="col-md-6 col-lg-5">
-                            <h2 class="center">Olive</h2>
-                            <p class="center">Olive is a responsive mobile app directed toward health-conscious users
+                            <h2>Olive</h2>
+                            <p>Olive is a responsive mobile app directed toward health-conscious users
                                 focusing on health, wellness and fitness.</p>
                             <a href="olive.html" class="button">Read more</a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-lg-7">
-                            <picture>
-                                <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                <svg class="displayed" xmlns:dc="http://purl.org/dc/elements/1.1/"
                                     xmlns:cc="http://creativecommons.org/ns#"
                                     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                                     xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
@@ -736,25 +735,14 @@
                                             d="m 146.539,116.325 -0.123,0.217 c 1.534,1.102 2.936,2.366 4.217,3.744 0.193,-0.133 0.404,-0.24 0.637,-0.314 -0.109,-0.104 -0.218,-0.207 -0.328,-0.309 -1.35,-1.259 -2.801,-2.407 -4.403,-3.338" />
                                     </g>
                                 </svg>
-                            </picture>
                         </div>
                         <div class="col-md-6 col-lg-5">
-                            <h2 class="center">Flowers from home</h2>
-                            <p class="center">A few favorite flowers of mine that remind me of home.</p>
-                            <a href="olive.html" class="button">Read more</a>
+                            <h2>Project 2 placeholder</h2>
+                            <p>Animated svg</p>
+                            <a href="index.html" class="button">Read more</a>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-7">
-                        <picture>
-                            <source srcset="img/olive/tools-small.jpg" media=(max-width:767px)>
-                            <img src="img/olive/tools-large.jpg" alt="Get in touch">
-                        </picture>
-                    </div>
-                    <div class="col-md-6 col-lg-5">
-                        <p> Thanks for visiting my site!</p>
-                    </div>
                 </div>
     </main>
     <footer id="contact">
@@ -780,8 +768,9 @@
                     <img src="img/fb.png" alt="facebook">
                 </a>
                 <p> Copyright MEL-OFLAHERTY 2023</p>
+                </div>
+                </div>
     </footer>
-    </div>
     <script src="js/scripts.js"></script>
 </body>
 

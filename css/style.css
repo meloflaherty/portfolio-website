@@ -11,22 +11,24 @@ Typography: Oswald : Weight 300,400,600
 
 */
 header {
-    background-color: #ffffff;
-    text-align: center;
-    position: relative;
-    width: 100%;
-    padding: 10px 0;
+  background-color:#ffffff;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
     -webkit-box-shadow: 0px 6px 11px 1px
     rgba(217,187,143,0.62);
     -moz-box-shadow: 0px 6px 11px 1px
     rgba(217,187,143,0.62);
-    box-shadow: 0px 6px 11px 1px rbga(217,187,143,0.62);
+    box-shadow: 0px 6px 11px 1px #edddce;
 }
+
 main {
     padding-top: 150px;
 }
+
 body {
-    background-color: #f5e3bf;
+    background-color: #f5e8d0;
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -35,26 +37,32 @@ body {
     max-width: 100%;
     position: relative;
 }
+
 p {
     line-height: 1.6;
     font-size: 16px;
     font-weight: 300;
 }
+
 h1, h2, h3, h4 {
     line-height: 1.4;
 }
+
 h1 {
     font-size: 2.75em;
     font-weight: 600
 }
+
 h2 {
     font-size:2.25em;
     Font-weight: 600;
 }
+
 h3 {
     font-size:1.75em;
     font-weight: 400;
 }
+
 h4 {
     font-size: 1.35em;
     font-weight: 400;
@@ -62,9 +70,6 @@ h4 {
 
 /* Images */
 
-img {
-    width: 100%;
-}
 .logo {
     max-width: 150px;
     text-transform: uppercase;
@@ -74,34 +79,41 @@ img {
 
 .button {
     display: inline-block; 
-    background-color:#f8eac7;
-    color: #e8b563; /*need to override the default color*/
+    background-color:#f1e5d2;
+    color: #545454; /*need to override the default color*/
     font-weight: 400;
     padding: 5px;
     border-radius: 5px;
-    border-bottom: 2px solid #e8b563; /*border width type and color*/
+    border-bottom: 2px solid #545454; /*border width type and color*/
     transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 }
+
 .button:hover {
     opacity: 0.8; /*reduces opacity to 80% */
+    scale: 1.05;
 }
+
 .button:active {
-    color:#f1e5d2
+  color:#895707;
 }
+
 .button.contact {
-    background-color:#f1e5d2 ;
-    color:#a67373;
+    background-color:#f1e5d2;
+    color:#545454;
     text-decoration: underline;
-    border: 2px solid #a47777;
+    border: 2px solid #545454;
     transition-duration: 0.5s;
 }
+
 .button.contact:hover {
     background-color:#fceddf;
-    color: #7d85ce;
-    opacity: 0.5;
+    color: #2a348b;
+    opacity: 0.9;
 }
+
 .button.contact:active {
-    color:#9e5919;
+    color:#000000;
 }
 
 /* Layout styling */
@@ -110,18 +122,31 @@ img {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
+    position: relative;
 }
+
+img {
+    display: inline-block;
+    width: 70%;
+    height: 70%;
+}
+
 .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    grid-row: 1;
 }
+
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
+
 .center {
     text-align: center;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -133,52 +158,65 @@ nav > ul {
     padding: 0;
     margin: 0;
 }
+
 nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     color:#6b3f3f;
 }
+
 nav > ul > li > a {
     color: #e5b0b0;
     text-decoration: none; /*no underlining*/
 }
+
 nav > ul > li > a:hover {
     color: #333550;
     text-decoration: underline; /*underlined when hovering*/
 }
+
 nav > ul > li > a:visited { 
     color: #49506d /*visited link */
 }
+
 nav > ul > li > a:active {
     color:#9e5919
 }
+
 nav > ul {
     margin: 1em 0;
 } 
+
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
     color: #7d85ce;
     text-decoration: underline;
 }
+
 .navtoggle li:not(:last-child) {
     display: none;
 }
+
 /* Responsive navigation */
 .navtoggle, .navtoggle.responsive {
     position: relative;
 }
+
 .navtoggle.responsive li {
     display: block;
     padding: 10px 0;
     border-top: 1px solid rgba(217,187,143,0.62);
 }
+
 .navtoggle.responsive li:last-child {
     padding: 0 0 10px;
 }
+
 .navtoggle.responsive nav {
     padding: 24px 0 0;
 }
+
 .navtoggle li .icon {
     position: absolute;
     right: 0;
@@ -186,13 +224,16 @@ nav > ul > li > a:focus {
     font-size: 20px;
     padding-right: 0;
 }
+
 #work {
     color:#545454;
     background-color:#ffffff
 }
+
 #contact.me {
     color:#545454;
 }
+
 #hero {
     color:#545454;
     background-color: #ffffff;
@@ -201,28 +242,34 @@ nav > ul > li > a:focus {
     width: 100%;
     text-align: center;
 }
+
 #hero span {
     display: inline-block;
-    background-color: rgb(239, 217, 207);
+    /*background-color: rgb(239, 217, 207);*/
     opacity: 0.8;
 }
+
 #work .row {
     padding-bottom: 25px;
 }
+
 footer {
     color: #545454;
     background-color: #ffffff;
     text-align: center;
 }
+
 .social-icons img {
     height: 40px;
     width: 40px;
 }
+
 #about {
     background-color: #ffffff;
     position: relative;
     color: #545454;
 }
+
 #olive {
     color: #545454;
     background-color: #ffffff;
@@ -230,6 +277,17 @@ footer {
     display: inline-block;
     width: 100%;
     position: relative;
+    text-align: center;
+}
+
+#olive h2 {
+    color: rgb(171, 88, 36);
+    text-decoration: underline;
+}
+
+#olive ul {
+    float: left;
+    text-align: left;
 }
 
 svg {
@@ -237,6 +295,7 @@ svg {
     max-width: 250px;
     height: auto;
 }
+
 #path22 {
     animation-duration: 1s;
     animation-name: color;
@@ -244,6 +303,7 @@ svg {
     animation-direction: alternate;
     animation-timing-function: linear;
 }
+
 #path66 {
     animation-duration: 1s;
     animation-name: color;
@@ -251,17 +311,32 @@ svg {
     animation-direction: alternate;
     animation-timing-function: linear;
 }
+
 .icon {
     color: rgb(28, 107, 108);
 }
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+svg.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 
 
 @keyframes color {
     from {fill: #549e5c;}
-    to {fill: rgb(237, 230, 19)}
-    }
+    to {fill: rgb(237, 230, 19)}}
+
+
 
 
 /* Medium devices (640px or larger) */
@@ -310,19 +385,20 @@ main {
 .col-md-6 {
     width: 50%;
 }
-.col-md-12 {
-    width: 100%;
-}
 #about-page h3 {
     margin-top: 0;
+}
+img {
+    width: 80%;
 }
 img.logo {
     min-width: 250px;
 }
 .continer {
-    width: 1200px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
 }
 }
 
@@ -333,10 +409,14 @@ body {
     font-size: 18px;
 }
 .col-lg-7 {
-    width: 58.33%;
+    width: 60%;
 }
 .col-lg-5 {
-    width: 41.66%;
+    width: 40%;
+}
+
+img {
+    max-width: 100%;
 }
 nav {
     width: auto;
