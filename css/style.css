@@ -153,6 +153,7 @@ p {
     color:#000000;
 }
 
+/*
 .fixedbutton {
     position: fixed;
     bottom: 5px;
@@ -166,6 +167,7 @@ p {
     color: #2a348b;
     text-decoration: underline;
 }
+*/
 
 /* Layout styling */
 .container {
@@ -441,6 +443,7 @@ svg.displayed {
     .column {
       width: 100%;
     }
+
   }
 
 @media only screen and (min-width: 641px) {
@@ -497,12 +500,13 @@ img {
 img.logo {
     min-width: 250px;
 }
-.continer {
+.container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
 }
+
 }
 
 
@@ -526,11 +530,13 @@ nav {
     float: right;
     margin-top: 4px;
 }
-.continer {
+.container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
+
+
 }
 
 
